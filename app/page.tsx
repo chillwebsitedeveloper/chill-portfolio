@@ -53,14 +53,19 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-          <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
-            <div className="text-4xl mb-4">🍽️</div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-900">Restaurant Website</h3>
-            <p className="text-gray-500 text-sm mb-4">
-              A modern restaurant site with menu, reservations, and location info.
-            </p>
-            <span className="text-xs text-blue-600 uppercase tracking-wider">Coming Soon</span>
-          </div>
+          <a
+  href="https://chill-restaurant-nine.vercel.app"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 hover:shadow-sm transition-all duration-300"
+>
+  <div className="text-4xl mb-4">🍽️</div>
+  <h3 className="text-lg font-semibold mb-2 text-gray-900">Restaurant Website</h3>
+  <p className="text-gray-500 text-sm mb-4">
+    A modern restaurant site with menu, reservations, and location info.
+  </p>
+  <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
+</a>
 
           <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
             <div className="text-4xl mb-4">💻</div>
