@@ -81,14 +81,19 @@ export default function Home() {
             <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
           </a>
 
-          <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
+          <a
+            href="https://chill-realestate.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-emerald-200 hover:bg-emerald-50/30 hover:shadow-sm transition-all duration-300"
+          >
             <div className="text-4xl mb-4">🏠</div>
             <h3 className="text-lg font-semibold mb-2 text-gray-900">Real Estate Page</h3>
             <p className="text-gray-500 text-sm mb-4">
-              A property listing page with galleries and contact forms.
+              A property listing page with image galleries, neighborhood guides, and contact forms.
             </p>
-            <span className="text-xs text-blue-600 uppercase tracking-wider">Coming Soon</span>
-          </div>
+            <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
+          </a>
 
           <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
             <div className="text-4xl mb-4">🏗️</div>
