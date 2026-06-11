@@ -49,32 +49,37 @@ export default function Home() {
       {/* PROJECTS SECTION */}
       <section id="projects" className="max-w-5xl mx-auto px-6 py-24">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Recent Projects</h2>
-        <p className="text-gray-400 text-center mb-16">Coming soon — real projects will appear here</p>
+        <p className="text-gray-400 text-center mb-16">Real projects, live and shipped.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
           <a
-  href="https://chill-restaurant-nine.vercel.app"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 hover:shadow-sm transition-all duration-300"
->
-  <div className="text-4xl mb-4">🍽️</div>
-  <h3 className="text-lg font-semibold mb-2 text-gray-900">Restaurant Website</h3>
-  <p className="text-gray-500 text-sm mb-4">
-    A modern restaurant site with menu, reservations, and location info.
-  </p>
-  <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
-</a>
+            href="https://chill-restaurant-nine.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 hover:shadow-sm transition-all duration-300"
+          >
+            <div className="text-4xl mb-4">🍽️</div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-900">Restaurant Website</h3>
+            <p className="text-gray-500 text-sm mb-4">
+              A modern restaurant site with menu, reservations, and location info.
+            </p>
+            <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
+          </a>
 
-          <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
+          <a
+            href="https://flowboard-six-beta.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-blue-200 hover:bg-blue-50/30 hover:shadow-sm transition-all duration-300"
+          >
             <div className="text-4xl mb-4">💻</div>
             <h3 className="text-lg font-semibold mb-2 text-gray-900">SaaS Landing Page</h3>
             <p className="text-gray-500 text-sm mb-4">
-              A high-converting landing page for a software product.
+              A premium landing page with 49 features — 3D tilt cards, confetti, command palette, and more.
             </p>
-            <span className="text-xs text-blue-600 uppercase tracking-wider">Coming Soon</span>
-          </div>
+            <span className="text-xs text-blue-600 uppercase tracking-wider font-medium">View Live →</span>
+          </a>
 
           <div className="bg-gray-50 border border-gray-100 rounded-xl p-8 hover:border-gray-200 hover:bg-gray-100/50 transition-all duration-300">
             <div className="text-4xl mb-4">🏠</div>
