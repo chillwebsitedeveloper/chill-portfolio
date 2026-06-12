@@ -1,22 +1,27 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
+
+function getGreeting() {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 12) return "Starting the day right? Let's build.";
+  if (hour >= 12 && hour < 17) return "Afternoon focus. Let's ship something great.";
+  if (hour >= 17 && hour < 22) return "Evening session. The best ideas happen now.";
+  return "Burning the midnight oil? Let's build.";
+}
+
+function getUtm() {
+  if (typeof window === "undefined") return "";
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get("utm_source");
+  return source ? source.charAt(0).toUpperCase() + source.slice(1) : "";
+}
 
 export default function ContextEngine() {
-  const [greeting, setGreeting] = useState("");
-  const [utm, setUtm] = useState("");
-
-  useEffect(() => {
-    const hour = new Date().getHours();
-    if (hour >= 5 && hour < 12) setGreeting("Starting the day right? Let's build.");
-    else if (hour >= 12 && hour < 17) setGreeting("Afternoon focus. Let's ship something great.");
-    else if (hour >= 17 && hour < 22) setGreeting("Evening session. The best ideas happen now.");
-    else setGreeting("Burning the midnight oil? Let's build.");
-
-    const params = new URLSearchParams(window.location.search);
-    const source = params.get("utm_source");
-    if (source) setUtm(source.charAt(0).toUpperCase() + source.slice(1));
-  }, []);
+  // Use inline functions to satisfy lint rule requiring inline function expressions
+  // for hooks like useMemo
+  const greeting = useMemo(() => getGreeting(), []);
+  const utm = useMemo(() => getUtm(), []);
 
   return (
     <div className="text-center mb-8">
